@@ -16,13 +16,15 @@ Below are some demonstration on how the algorithm works.
 ![](samples/4_sided/result1.jpg) 
 ![](samples/4_sided/result2.jpg) 
 ![](samples/4_sided/result3.jpg)
-**4 sided convex polygons**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**4 sided convex polygons**
 
 ![](samples/6_sided/result0.jpg) 
 ![](samples/6_sided/result1.jpg) 
 ![](samples/6_sided/result2.jpg) 
 ![](samples/6_sided/result3.jpg)
-**5 sided convex polygons**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**5 sided convex polygons**
 
 ### Usage
 
