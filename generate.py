@@ -20,7 +20,6 @@ max_iter = args.max_iter
 
 image = np.zeros((image_height, image_width, 3))
 
-img_idx = 0
 
 
 def draw_temp_line(im, point1, point2, red_colour=255):
@@ -145,8 +144,6 @@ def generate_polygon(visualize=False):
 		if visualize:
 
 			img = draw_temp_line(image, all_points['p1'], all_points['p2'])
-			cv2.imwrite('images/'+str(img_idx)+'.jpg', img)
-			img_idx += 1
 			cv2.imshow('',img)
 			cv2.waitKey(50)
 
@@ -171,8 +168,6 @@ def generate_polygon(visualize=False):
 			if visualize:
 
 				temp_img = draw_temp_line(img, all_points['p'+str(point_idx-1)], all_points['p'+str(point_idx)], 0)
-				cv2.imwrite('images/'+str(img_idx)+'.jpg', temp_img)
-				img_idx += 1
 				cv2.imshow('', temp_img)
 				cv2.waitKey(50)
 
@@ -226,8 +221,6 @@ def generate_polygon(visualize=False):
 			if visualize:
 
 				img = draw_temp_line(img, all_points['p'+str(point_idx-1)], all_points['p'+str(point_idx)])
-				cv2.imwrite('images/'+str(img_idx)+'.jpg', img)
-				img_idx += 1
 				cv2.imshow('', img)
 				cv2.waitKey(50)
 
@@ -314,7 +307,6 @@ if __name__ == "__main__":
 
 	if args.visualize:
 		cv2.imshow('', final_img)
-		cv2.imwrite('images/'+str(img_idx)+'.jpg', final_img)
 		cv2.waitKey(0)
 
 	if args.save:
