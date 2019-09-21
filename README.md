@@ -1,6 +1,6 @@
 ﻿# Convex Polygon Generator in Python
 
-Given script can be used to generate convex polygons with the specified number of sides, minimum angle between two adjacent sides, minimum length and so on.
+Given script can be used to generate convex polygons with the specified number of sides, minimum angle between two adjacent sides, minimum length for each side and so on.
 
 Below are some demonstration on how the algorithm works.
 
