@@ -301,19 +301,19 @@ def draw_lines(im, points):
 
 if __name__ == "__main__":
 
-	for i in range(10):
+	
 
-		dictionary = generate_polygon(args.visualize)
-		final_points = get_final_points(dictionary)
-		final_img = draw_lines(image, final_points)
+	dictionary = generate_polygon(args.visualize)
+	final_points = get_final_points(dictionary)
+	final_img = draw_lines(image, final_points)
 
-		if args.visualize:
-			cv2.imshow('', final_img)
-			cv2.waitKey(0)
+	if args.visualize:
+		cv2.imshow('', final_img)
+		cv2.waitKey(0)
 
-		if args.save:
+	if args.save:
 
-			cv2.imwrite('samples/result'+str(i)+'.jpg', final_img)
+		cv2.imwrite('samples/result.jpg', final_img)
 
 
 
